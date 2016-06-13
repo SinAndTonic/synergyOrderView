@@ -1,0 +1,24 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "meteor": true,
+    "node": true,
+    "browser": true
+  },
+  "plugins": ["meteor","react"],
+  "extends": ["plugin:meteor/recommended","eslint:recommended", "plugin:react/recommended"],
+  "globals": {
+    "FlowRouter":true
+  },
+  "rules": {
+    "semi": ["warn", "always"],
+    "no-unused-vars" : ["warn"],
+    "import/no-unresolved": ["off"]
+  }
+}
